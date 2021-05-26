@@ -21,5 +21,13 @@ namespace Tic_Tac_Toe_Game
         {
 
         }
+
+        private void Playbttn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 gameForm = new Form2();
+            gameForm.Show();
+
+        }
     }
 }

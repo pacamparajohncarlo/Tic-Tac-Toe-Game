@@ -41,6 +41,7 @@
             this.playbttn.TabIndex = 0;
             this.playbttn.Text = "Play";
             this.playbttn.UseVisualStyleBackColor = true;
+            this.playbttn.Click += new System.EventHandler(this.Playbttn_Click);
             // 
             // Form1
             // 
