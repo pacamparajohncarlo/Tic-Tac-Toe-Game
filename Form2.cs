@@ -65,19 +65,49 @@ namespace Tic_Tac_Toe_Game
                 }
                 if (pattern.Equals("OOO"))
                 {
+                    reset();
                     MessageBox.Show("Player O has won the game!", "Congratulations!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
                 else if (pattern.Equals("XXX"))
                 {
+                    reset();
                     MessageBox.Show("Player X has won the game!", "Congratulations!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+                Tie();
+            }
+        }
+        public void reset()
+        {
+            box1.Text = "";
+            box2.Text = "";
+            box3.Text = "";
+            box4.Text = "";
+            box5.Text = "";
+            box6.Text = "";
+            box7.Text = "";
+            box8.Text = "";
+            box9.Text = "";
+            gameboard = new string[9];
+            currentTurn = 0;
+        }
+        public void Tie()
+        {
+            int counter = 0;
+            for(int i=0; i<gameboard.Length; i++)
+            {
+                if(gameboard[i] != null) { counter++;}
+
+                if(counter == 9)
+                {
+                    reset();
+                    MessageBox.Show("Intense match!! No winner for today!", "TIE!!", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
         }
         private void Restartbutton_Click(object sender, EventArgs e)
         {
-
         }
-
         private void Box1_Click(object sender, EventArgs e)
         {
             currentTurn++;
@@ -152,6 +182,11 @@ namespace Tic_Tac_Toe_Game
             gameboard[8] = returnSymbol(currentTurn);
             box9.Text = gameboard[8];
             Winner();
+        }
+
+        private void Exitbutton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

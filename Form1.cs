@@ -29,5 +29,20 @@ namespace Tic_Tac_Toe_Game
             gameForm.Show();
 
         }
+
+        private void Buttonquit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 gameForm = new Form2();
+            gameForm.Close();
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();      
+            Form3_for_Rules gamerules = new Form3_for_Rules();
+            gamerules.Show();
+
+        }
     }
 }

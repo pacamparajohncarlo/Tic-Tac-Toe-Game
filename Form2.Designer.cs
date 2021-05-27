@@ -38,19 +38,14 @@
             this.box7 = new System.Windows.Forms.Button();
             this.box8 = new System.Windows.Forms.Button();
             this.box9 = new System.Windows.Forms.Button();
-            this.restartbutton = new System.Windows.Forms.Button();
-            this.Score = new System.Windows.Forms.Label();
-            this.PlayerX = new System.Windows.Forms.Label();
-            this.PlayerO = new System.Windows.Forms.Label();
-            this.score1 = new System.Windows.Forms.Label();
-            this.score2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.exitbutton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // box1
             // 
             this.box1.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box1.Location = new System.Drawing.Point(52, 67);
+            this.box1.Location = new System.Drawing.Point(29, 47);
             this.box1.Name = "box1";
             this.box1.Size = new System.Drawing.Size(126, 99);
             this.box1.TabIndex = 0;
@@ -60,7 +55,7 @@
             // box2
             // 
             this.box2.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box2.Location = new System.Drawing.Point(184, 67);
+            this.box2.Location = new System.Drawing.Point(161, 47);
             this.box2.Name = "box2";
             this.box2.Size = new System.Drawing.Size(126, 99);
             this.box2.TabIndex = 1;
@@ -70,7 +65,7 @@
             // box3
             // 
             this.box3.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box3.Location = new System.Drawing.Point(316, 67);
+            this.box3.Location = new System.Drawing.Point(293, 47);
             this.box3.Name = "box3";
             this.box3.Size = new System.Drawing.Size(126, 99);
             this.box3.TabIndex = 2;
@@ -80,7 +75,7 @@
             // box4
             // 
             this.box4.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box4.Location = new System.Drawing.Point(52, 172);
+            this.box4.Location = new System.Drawing.Point(29, 152);
             this.box4.Name = "box4";
             this.box4.Size = new System.Drawing.Size(126, 99);
             this.box4.TabIndex = 3;
@@ -90,7 +85,7 @@
             // box5
             // 
             this.box5.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box5.Location = new System.Drawing.Point(184, 172);
+            this.box5.Location = new System.Drawing.Point(161, 152);
             this.box5.Name = "box5";
             this.box5.Size = new System.Drawing.Size(126, 99);
             this.box5.TabIndex = 4;
@@ -100,7 +95,7 @@
             // box6
             // 
             this.box6.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box6.Location = new System.Drawing.Point(316, 172);
+            this.box6.Location = new System.Drawing.Point(293, 152);
             this.box6.Name = "box6";
             this.box6.Size = new System.Drawing.Size(126, 99);
             this.box6.TabIndex = 5;
@@ -110,7 +105,7 @@
             // box7
             // 
             this.box7.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box7.Location = new System.Drawing.Point(52, 277);
+            this.box7.Location = new System.Drawing.Point(29, 257);
             this.box7.Name = "box7";
             this.box7.Size = new System.Drawing.Size(126, 99);
             this.box7.TabIndex = 6;
@@ -120,7 +115,7 @@
             // box8
             // 
             this.box8.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box8.Location = new System.Drawing.Point(184, 277);
+            this.box8.Location = new System.Drawing.Point(161, 257);
             this.box8.Name = "box8";
             this.box8.Size = new System.Drawing.Size(126, 99);
             this.box8.TabIndex = 7;
@@ -130,97 +125,41 @@
             // box9
             // 
             this.box9.Font = new System.Drawing.Font("MV Boli", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box9.Location = new System.Drawing.Point(316, 277);
+            this.box9.Location = new System.Drawing.Point(293, 257);
             this.box9.Name = "box9";
             this.box9.Size = new System.Drawing.Size(126, 99);
             this.box9.TabIndex = 8;
             this.box9.UseVisualStyleBackColor = true;
             this.box9.Click += new System.EventHandler(this.Box9_Click);
             // 
-            // restartbutton
+            // exitbutton
             // 
-            this.restartbutton.Location = new System.Drawing.Point(527, 306);
-            this.restartbutton.Name = "restartbutton";
-            this.restartbutton.Size = new System.Drawing.Size(128, 40);
-            this.restartbutton.TabIndex = 9;
-            this.restartbutton.Text = "Restart";
-            this.restartbutton.UseVisualStyleBackColor = true;
-            this.restartbutton.Click += new System.EventHandler(this.Restartbutton_Click);
+            this.exitbutton.Location = new System.Drawing.Point(251, 399);
+            this.exitbutton.Name = "exitbutton";
+            this.exitbutton.Size = new System.Drawing.Size(105, 21);
+            this.exitbutton.TabIndex = 9;
+            this.exitbutton.Text = "Exit";
+            this.exitbutton.UseVisualStyleBackColor = true;
+            this.exitbutton.Click += new System.EventHandler(this.Exitbutton_Click);
             // 
-            // Score
+            // label1
             // 
-            this.Score.AutoSize = true;
-            this.Score.Font = new System.Drawing.Font("MV Boli", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Score.Location = new System.Drawing.Point(524, 89);
-            this.Score.Name = "Score";
-            this.Score.Size = new System.Drawing.Size(52, 17);
-            this.Score.TabIndex = 10;
-            this.Score.Text = "Score:";
-            // 
-            // PlayerX
-            // 
-            this.PlayerX.AutoSize = true;
-            this.PlayerX.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayerX.Location = new System.Drawing.Point(513, 124);
-            this.PlayerX.Name = "PlayerX";
-            this.PlayerX.Size = new System.Drawing.Size(70, 18);
-            this.PlayerX.TabIndex = 11;
-            this.PlayerX.Text = "Player X:";
-            // 
-            // PlayerO
-            // 
-            this.PlayerO.AutoSize = true;
-            this.PlayerO.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PlayerO.Location = new System.Drawing.Point(513, 161);
-            this.PlayerO.Name = "PlayerO";
-            this.PlayerO.Size = new System.Drawing.Size(68, 18);
-            this.PlayerO.TabIndex = 12;
-            this.PlayerO.Text = "Player O:";
-            // 
-            // score1
-            // 
-            this.score1.AutoSize = true;
-            this.score1.BackColor = System.Drawing.Color.White;
-            this.score1.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score1.Location = new System.Drawing.Point(608, 124);
-            this.score1.Name = "score1";
-            this.score1.Size = new System.Drawing.Size(15, 18);
-            this.score1.TabIndex = 13;
-            this.score1.Text = "0";
-            // 
-            // score2
-            // 
-            this.score2.AutoSize = true;
-            this.score2.BackColor = System.Drawing.Color.White;
-            this.score2.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.score2.Location = new System.Drawing.Point(608, 161);
-            this.score2.Name = "score2";
-            this.score2.Size = new System.Drawing.Size(15, 18);
-            this.score2.TabIndex = 14;
-            this.score2.Text = "0";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(527, 260);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(128, 40);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "New Game";
-            this.button1.UseVisualStyleBackColor = true;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Lucida Handwriting", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(78, 8);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(294, 36);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Tic Tac Toe Game";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Silver;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.score2);
-            this.Controls.Add(this.score1);
-            this.Controls.Add(this.PlayerO);
-            this.Controls.Add(this.PlayerX);
-            this.Controls.Add(this.Score);
-            this.Controls.Add(this.restartbutton);
+            this.ClientSize = new System.Drawing.Size(474, 451);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.exitbutton);
             this.Controls.Add(this.box9);
             this.Controls.Add(this.box8);
             this.Controls.Add(this.box7);
@@ -250,12 +189,7 @@
         private System.Windows.Forms.Button box7;
         private System.Windows.Forms.Button box8;
         private System.Windows.Forms.Button box9;
-        private System.Windows.Forms.Button restartbutton;
-        private System.Windows.Forms.Label Score;
-        private System.Windows.Forms.Label PlayerX;
-        private System.Windows.Forms.Label PlayerO;
-        private System.Windows.Forms.Label score1;
-        private System.Windows.Forms.Label score2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button exitbutton;
+        private System.Windows.Forms.Label label1;
     }
 }
